@@ -52,7 +52,9 @@ The analysis was performed using:
 - NumPy
 - matplotlib
 
+## Data availability
 
+The scripts provided in this repository were used to analyse bacteriophage genome annotations derived from publicly available sequence databases. Due to dataset size, genome input files and generated outputs are not included in this repository.
 Ajay Rungasamy  
 BSc Biological Sciences  
 University of Leicester

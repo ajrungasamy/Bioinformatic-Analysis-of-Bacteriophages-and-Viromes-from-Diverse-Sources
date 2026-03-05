@@ -14,7 +14,7 @@ The workflow consists of three main scripts which are executed sequentially.
 
 `01_parse_local_phage_summary.py`
 
-Parses locally stored GenBank/EMBL genome files and extracts genome-level features including:
+Parses locally stored GenBank or EMBL genome files and extracts genome-level features including:
 
 * genome length
 * gene counts
@@ -44,22 +44,24 @@ Performs downstream analysis including:
 * quality-control filtering
 * summary statistics
 * correlation analysis
-* automated generation of plots used in the dissertation
+* automated generation of figures used in the dissertation
 
 ---
 
 ## Repository structure
 
+```
 scripts/
-├─ 01_parse_local_phage_summary.py   — genome parsing and feature extraction
-├─ 02_join_metadata.py               — metadata integration
-└─ 03_analyse_and_plot.py            — statistical analysis and figure generation
+ ├─ 01_parse_local_phage_summary.py   # genome parsing and feature extraction
+ ├─ 02_join_metadata.py               # metadata integration
+ └─ 03_analyse_and_plot.py            # statistical analysis and figure generation
+```
 
 ---
 
 ## Software requirements
 
-The analysis was performed using:
+The analysis was performed using the following Python packages:
 
 * Python 3
 * Biopython

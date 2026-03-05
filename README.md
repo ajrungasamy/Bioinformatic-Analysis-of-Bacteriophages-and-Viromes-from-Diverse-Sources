@@ -4,6 +4,8 @@ This repository contains the Python scripts used for the computational analysis 
 
 The project performs large-scale comparative genomic analysis of bacteriophage genomes, including genome feature extraction, metadata integration, quality control, and statistical analysis.
 
+---
+
 ## Analysis pipeline
 
 The workflow consists of three main scripts which are executed sequentially.
@@ -49,9 +51,9 @@ Performs downstream analysis including:
 ## Repository structure
 
 scripts/
-├─ 01_parse_local_phage_summary.py   # genome parsing and feature extraction
-├─ 02_join_metadata.py               # metadata integration
-└─ 03_analyse_and_plot.py            # statistical analysis and figure generation
+├─ 01_parse_local_phage_summary.py   — genome parsing and feature extraction
+├─ 02_join_metadata.py               — metadata integration
+└─ 03_analyse_and_plot.py            — statistical analysis and figure generation
 
 ---
 
@@ -64,6 +66,20 @@ The analysis was performed using:
 * pandas
 * NumPy
 * matplotlib
+
+---
+
+## Reproducibility
+
+The analysis pipeline was designed to operate on locally stored bacteriophage genome annotations in GenBank or EMBL format.
+
+The scripts should be executed sequentially:
+
+1. `01_parse_local_phage_summary.py` — parse genome records and generate genome-level summary tables
+2. `02_join_metadata.py` — integrate genome summaries with external metadata
+3. `03_analyse_and_plot.py` — compute derived metrics, perform statistical analysis, and generate figures
+
+All analyses were performed locally using Python within a virtual environment. Output files and figures are generated automatically during execution.
 
 ---
 
